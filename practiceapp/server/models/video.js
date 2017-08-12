@@ -16,5 +16,5 @@ const videoSchema = new Schema({
 //export the models to external(app-wide) use
 //arg1 = name by which it will be known in app
 //arg2 = variable name from the  schema defined above
-//arg3 = name of the table in mongodb
+//arg3 = name of the table in mongodb(optional, if absent, then arg3 <= arg1)
 module.exports = mongoose.model('video', videoSchema, 'videos');
