@@ -1,4 +1,4 @@
-//DB tables representation file
+//DB tables to JS object mapping file
 
 //need mongoose to create schema and map it to mondodb
 const mongoose = require('mongoose');
