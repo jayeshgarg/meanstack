@@ -5,16 +5,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { VideoCenterComponent } from './video-center/video-center.component';
+import { VideoListComponent } from './video-list/video-list.component';
+import { VideoDetailsComponent } from './video-details/video-details.component';
+
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    VideoCenterComponent
+    VideoCenterComponent,
+    VideoListComponent,
+    VideoDetailsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
