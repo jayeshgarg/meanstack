@@ -9,6 +9,8 @@ import { VideoListComponent } from './video-list/video-list.component';
 import { VideoDetailsComponent } from './video-details/video-details.component';
 
 import { FormsModule } from '@angular/forms';
+import { HttpModule } from "@angular/http";
+import { SafePipe } from './safe.pipe';
 
 @NgModule({
   declarations: [
@@ -16,12 +18,14 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     VideoCenterComponent,
     VideoListComponent,
-    VideoDetailsComponent
+    VideoDetailsComponent,
+    SafePipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
